@@ -28,8 +28,8 @@ def process_response(input_text, generated_text):
 
 # Generate and process the response when there is user input
 if user_input:
-    # We increase max_length to have more content to work with and enable truncation
-    raw_response = generator(user_input, max_length=100, truncation = True)[0]['generated_text']
+    # We increase max_length to have more content to work with
+    raw_response = generator(user_input, max_length=100)[0]['generated_text']
     response = process_response(user_input, raw_response)
     
     # Display the processed response
