@@ -28,7 +28,9 @@ def process_response(input_text, generated_text):
     return generated_text
 ```
 
-
+## deploy the app
+1. import the repo to github
+![alt text](image-1.png)
 
 ## Test
 ![alt text](image.png)
