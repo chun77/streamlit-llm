@@ -1,0 +1,9 @@
+stages:
+  - deploy
+
+push_to_github:
+  stage: deploy
+  only:
+    - main  # only when master branch is updated
+  script:
+    - git push github HEAD:main
